@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Card</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        --angle: 60deg;
+      }
+
+      /* 
+      body {
+        background-color: rgb(17, 22, 26);
+      } */
+
+      .card_parent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        background-color: #485460;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        /* background-image: linear-gradient(to top,  */
+        background-image: linear-gradient(var(--angle),
+            rgba(255, 255, 255, 0.766) 50%,
+            rgba(0, 0, 0, 0.5) 40%),
+          url(mast-mountain.jpg);
+        background-size: 100% 100%;
+        box-shadow: 0 10px 20px -6px #000;
+        /* onset horizontal vertical fade color */
+        /* background-color: red; */
+        height: 60vh;
+        width: 60%;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="card_parent">
+      <div class="card">
+
+      </div>
+    </div>
+  </body>
+
+</html>
