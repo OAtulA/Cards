@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+:root{
+    --angle: 60deg;
+}
+/* 
+      body {
+        background-color: rgb(17, 22, 26);
+      } */
+
+.card_parent {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #485460;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-image: url(mast-mountain.jpg);
+    background-size: 100% 100%;
+    box-shadow: 0 10px 20px -6px #000;    
+    /* background-color: red; */
+    height: 60vh;
+    width: 60%;
+    transition-duration: 5s;
+    position: relative;
+}
+
+.card:hover{
+    transform: scale(1.3);
+    
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    /* z-index: 1; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(var(--angle), rgba(255, 255, 255, 0.766) 50%, rgba(0, 0, 0, 0.5) 40%);
+    transition: transform 5s;
+    height: 200%;
+    width: 100%;
+}
+
+.card:hover::before {
+    transform: rotate(360deg);
+}
+
+
+/* transform: translateX(-50%); */
+/* margin-left: auto; */
+/* p {
+        margin-top: 85vh;
+        
+        margin-right: 40%;
+        
+        text-align: center;
+        font-size: 1.5rem;
+      } */
+/* 
+      p {
+        margin-top: 85vh;
+        transform: translateX(-140%); */
+/* margin-right: -29%; */
+/* margin-left: auto;
+        text-align: center;
+        font-size: 1.5rem;
+      } */
+
+p {
+    display: block;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #485460;
+}
+
+.card-good-border-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+
+}

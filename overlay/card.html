@@ -5,73 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overlay Card</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        --angle: 60deg;
-      }
-
-      /* 
-      body {
-        background-color: rgb(17, 22, 26);
-      } */
-      
-      .card_parent {
-        display: flex;
-        flex-direction: column;
-        /* align-items: center; */
-        justify-content: center;
-        height: 100vh;
-        width: 100%;
-        background-color: #485460;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .card {
-        /* background-image: linear-gradient(to top,  */
-        background-image: linear-gradient(var(--angle),
-            rgba(255, 255, 255, 0.766) 50%,
-            rgba(0, 0, 0, 0.5) 40%),
-          url(mast-mountain.jpg);
-        background-size: 100% 100%;
-        box-shadow: 0 10px 20px -6px #000;
-        /* onset horizontal vertical fade color */
-        /* background-color: red; */
-        height: 60vh;
-        width: 60%;
-      }
-
-      /* transform: translateX(-50%); */
-      /* margin-left: auto; */
-      /* p {
-        margin-top: 85vh;
-        
-        margin-right: 40%;
-        
-        text-align: center;
-        font-size: 1.5rem;
-      } */
-/* 
-      p {
-        margin-top: 85vh;
-        transform: translateX(-140%); */
-        /* margin-right: -29%; */
-        /* margin-left: auto;
-        text-align: center;
-        font-size: 1.5rem;
-      } */
-
-      p{display: block;
-      font-size: 3rem;
-    margin-top: 2rem;}
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
+    <!-- First card page -->
     <div class="card_parent">
       <div class="card">
 
@@ -80,6 +18,14 @@
         This overlay helped me learn better about the linear-gradients
       </p>
   
+    </div>
+    <!-- Second card page -->
+    <div class="page2">
+      <div class="card-good-border-container">
+        <p>
+          What is This.
+        </p>
+      </div>
     </div>
     
 
