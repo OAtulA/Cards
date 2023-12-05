@@ -1,9 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
+    box-sizing: border-box;    
 }
+
 :root{
     --angle: 60deg;
 }
@@ -26,6 +26,7 @@
 }
 
 .card{
+    overflow: hidden;
     background-image: url(mast-mountain.jpg);
     background-size: 100% 100%;
     box-shadow: 0 10px 20px -6px #000;    
@@ -83,7 +84,7 @@
 p {
     display: block;
     font-size: 3rem;
-    margin-top: 2rem;
+    margin-top: 8rem;
 }
 .page2{
     height: 100vh;
